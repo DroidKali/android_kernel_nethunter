@@ -17,6 +17,18 @@ config NETHUNTER_SUPPORT
 	select MODULE_UNLOAD
 
 	select MODVERSIONS
+	
+config NETHUNTER_BLUETOOTH_SUPPORT
+
+    bool "Bluetooth drivers support"
+    
+    default y if NETHUNTER_SUPPORT
+    
+    depends on NETHUNTER_SUPPORT
+    
+    help
+    
+        Enable bluetooth drivers support.
 
 	select MMC
 
@@ -59,6 +71,18 @@ config NETHUNTER_SUPPORT
 	select BT_HCIBPA10X
 
 	select BT_HCIBFUSB
+	
+config NETHUNTER_MAC80211_SUPPORT
+
+    bool "Wireless mac802.11 drivers support"
+    
+    default y if NETHUNTER_SUPPORT
+    
+    depends on NETHUNTER_SUPPORT
+    
+    help
+    
+        Enable wireless mac802.11 support.
 
 	select CFG80211_WEXT
 
