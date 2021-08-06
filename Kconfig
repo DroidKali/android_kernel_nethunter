@@ -389,6 +389,14 @@ config NETHUNTER_WIFI_DRIVERS_SUPPORT
 
 	select LIBERTAS
 
+	select HOSTAP
+
+	select HOSTAP_PLX
+
+	select HOSTAP_PCI
+
+	select HOSTAP_FIRMWARE
+
 	select WLAN_VENDOR_MEDIATEK
 
 	select MT7601U
