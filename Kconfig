@@ -413,6 +413,10 @@ config NETHUNTER_WIFI_DRIVERS_SUPPORT
 
 	select LIBERTAS
 
+	select PCI
+
+	select WLAN_VENDOR_INTERSIL
+
 	select HOSTAP
 
 	select HOSTAP_PLX
